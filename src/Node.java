@@ -6,6 +6,10 @@ import static java.util.Objects.isNull;
 public class Node {
 
     private ArrayList<Node> children;
+
+    public int x;
+    public int y;
+
     public int level;
     /*
     LEVELS:
@@ -21,6 +25,7 @@ public class Node {
     public Node(String id) {
         children = new ArrayList<>(0);
     }
+
 
     public void addChild(Node newChild) {
         // Assumes this is correctly formatted to be a child of this node!!
@@ -42,5 +47,9 @@ public class Node {
 
     public Node[] getChildren() {
         return children.toArray(new Node[0]);
+    }
+
+    public int setCoordinates() {
+        return x, y;
     }
 }

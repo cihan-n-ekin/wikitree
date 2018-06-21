@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Tree extends Node {
-    private ArrayList<ArrayList<Node>> levels;
+    public ArrayList<ArrayList<Node>> levels;
 
     Tree() {
         super("tree");
