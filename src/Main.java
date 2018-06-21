@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -22,6 +21,7 @@ public class Main {
                 try {
                     System.out.print(page.phylum.get("scientificName").getAsString());
                     tree.addSpecies(new Species(page));
+                    Render.render_win(frame, tree);
                 } catch(NullPointerException e) {
                     System.out.println("not found!");
                     e.printStackTrace();

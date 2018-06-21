@@ -11,10 +11,8 @@ class TaxonomyInfo {
 
     JsonObject kingdom;
     JsonObject phylum;
-    JsonObject subphylum;
     JsonObject clss;
     JsonObject order;
-    JsonObject suborder;
     JsonObject family;
     JsonObject species;
     JsonObject genus;
@@ -78,17 +76,11 @@ class TaxonomyInfo {
                     case ("phylum"):
                         this.phylum = classification.getAsJsonObject();
                         break;
-                    case ("subphylum"):
-                        this.subphylum = classification.getAsJsonObject();
-                        break;
                     case ("class"):
                         this.clss = classification.getAsJsonObject();
                         break;
                     case ("order"):
                         this.order = classification.getAsJsonObject();
-                        break;
-                    case ("suborder"):
-                        this.suborder = classification.getAsJsonObject();
                         break;
                     case ("family"):
                         this.family = classification.getAsJsonObject();

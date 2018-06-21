@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a06ebd92-2559-4ec2-a764-dca50cb6bc59" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wikitree/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wikitree/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wikitree/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Render.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wikitree/Render.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Species.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wikitree/Species.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wikitree/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wikitree/Tree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Render.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Species.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Species.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaxonomyInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaxonomyInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikitree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wikitree.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+            <state relative-caret-position="313">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,13 +73,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="378">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#295#296#0" expanded="true" />
                 <element signature="e#333#334#0" expanded="true" />
               </folding>
@@ -111,8 +105,8 @@
       <file leaf-file-name="Render.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Render.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="1116">
+              <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -120,8 +114,8 @@
       <file leaf-file-name="TaxonomyInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TaxonomyInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="845">
-              <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+            <state relative-caret-position="235">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,8 +126,8 @@
       <file leaf-file-name="Species.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Species.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -146,6 +140,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sub*</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -160,12 +159,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Node.java" />
-        <option value="$PROJECT_DIR$/src/Tree.java" />
         <option value="$PROJECT_DIR$/src/Species.java" />
-        <option value="$PROJECT_DIR$/src/TaxonomyInfo.java" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/src/Render.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/TaxonomyInfo.java" />
+        <option value="$PROJECT_DIR$/src/Render.java" />
+        <option value="$PROJECT_DIR$/src/Tree.java" />
       </list>
     </option>
   </component>
@@ -437,7 +436,7 @@
       <option name="presentableId" value="Default" />
       <updated>1529558756774</updated>
       <workItem from="1529558762720" duration="1835000" />
-      <workItem from="1529562162576" duration="20600000" />
+      <workItem from="1529562162576" duration="21599000" />
     </task>
     <task id="LOCAL-00001" summary="added WikiInfo class to handle wikipedia article parsing">
       <created>1529564666875</created>
@@ -537,11 +536,25 @@
       <option name="project" value="LOCAL" />
       <updated>1529586456774</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="final">
+      <created>1529588332294</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1529588332294</updated>
+    </task>
+    <task id="LOCAL-00016" summary="more fixes to things!">
+      <created>1529588882050</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1529588882050</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1807000" />
+    <option name="totallyTimeSpent" value="2806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,11 +586,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.52803737" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3847352" />
       <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32866043" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31502423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31502423" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32866043" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -621,6 +634,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="added WikiInfo class to handle wikipedia article parsing" />
     <MESSAGE value="add IDEA project files" />
     <MESSAGE value="add Node class&#10;also Tree class that extends Node&#10;&#10;semi-nonfunctional right now" />
@@ -634,7 +648,18 @@
     <MESSAGE value="added childHasChild to recursively check child trees" />
     <MESSAGE value="added Tree.find() to get a tree subnode from the id" />
     <MESSAGE value="memory improvement to tree traversal" />
-    <option name="LAST_COMMIT_MESSAGE" value="memory improvement to tree traversal" />
+    <MESSAGE value="final" />
+    <MESSAGE value="hotfix" />
+    <MESSAGE value="more fixes to things!" />
+    <option name="LAST_COMMIT_MESSAGE" value="more fixes to things!" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -670,7 +695,6 @@
         <state>
           <caret column="17" selection-start-column="17" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#295#296#0" expanded="true" />
             <element signature="e#333#334#0" expanded="true" />
           </folding>
@@ -814,7 +838,6 @@
         <state relative-caret-position="278">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#295#296#0" expanded="true" />
             <element signature="e#333#334#0" expanded="true" />
           </folding>
@@ -871,16 +894,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/jsoup_1_11_3.xml" />
     <entry file="file://$PROJECT_DIR$/src/WikiInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/TaxonomyInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-246">
@@ -891,25 +904,6 @@
             <element signature="e#2180#2181#0" expanded="true" />
             <element signature="e#1556#1557#0" expanded="true" />
             <element signature="e#1608#1609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Species.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,19 +920,54 @@
         <state relative-caret-position="-18051" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Render.java">
+    <entry file="file://$PROJECT_DIR$/src/Species.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="453" selection-start-line="453" selection-end-line="453" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="313">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TaxonomyInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Render.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
           </folding>
         </state>
       </provider>

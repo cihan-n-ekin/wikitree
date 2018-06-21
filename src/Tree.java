@@ -25,20 +25,14 @@ public class Tree extends Node {
             if(kingdom.id.equals(id)) return kingdom;
             for( Node phylum : getChildren()) {
                 if(phylum.id.equals(id)) return phylum;
-                for( Node subphyl : getChildren()) {
-                    if(subphyl.id.equals(id)) return subphyl;
-                    for( Node c : getChildren()) {
-                        if(c.id.equals(id)) return c;
-                        for( Node d : getChildren()) {
-                            if(d.id.equals(id)) return d;
-                            for( Node e : getChildren()) {
-                                if(e.id.equals(id)) return e;
-                                for( Node g : getChildren()) {
-                                    if(g.id.equals(id)) return g;
-                                    for( Node s : getChildren()) {
-                                        if(s.id.equals(id)) return s;
-                                    }
-                                }
+                for (Node c : getChildren()) {
+                    if (c.id.equals(id)) return c;
+                    for (Node d : getChildren()) {
+                        if (d.id.equals(id)) return d;
+                        for (Node g : getChildren()) {
+                            if (g.id.equals(id)) return g;
+                            for (Node s : getChildren()) {
+                                if (s.id.equals(id)) return s;
                             }
                         }
                     }
@@ -67,9 +61,7 @@ public class Tree extends Node {
 
         Node king = new Node("");
         Node phy = new Node("");
-        Node subphy = new Node("");
         Node ord = new Node("");
-        Node subord = new Node("");
         Node clas = new Node("");
         Node fam = new Node("");
         Node genus = new Node("");
@@ -79,6 +71,7 @@ public class Tree extends Node {
             case 1:
                 king.id = newSpecies.taxon.kingdom.get("scientificName").getAsString();
                 this.addChild(king);
+
             case 2:
                 phy.id = newSpecies.taxon.phylum.get("scientificName").getAsString();
 

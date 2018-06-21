@@ -1,6 +1,6 @@
+import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import javax.swing.*;
 
 public class Render {
 
@@ -55,16 +55,14 @@ public class Render {
     public static void render_win(JFrame frame, Tree tree) {
 
         // Taxonomy elements are panels
-        String[] taxonomy = new String[9];
+        String[] taxonomy = new String[7];
         taxonomy[0] = "Kingdom";
         taxonomy[1] = "Phylum";
-        taxonomy[2] = "SubPhylum";
-        taxonomy[3] = "Class";
-        taxonomy[4] = "Order";
-        taxonomy[5] = "SubOrder";
-        taxonomy[6] = "Family";
-        taxonomy[7] = "Genus";
-        taxonomy[8] = "Species";
+        taxonomy[2] = "Class";
+        taxonomy[3] = "Order";
+        taxonomy[4] = "Family";
+        taxonomy[5] = "Genus";
+        taxonomy[6] = "Species";
 
         // Sizes
         int lenghtOfTaxonomy = taxonomy.length;
