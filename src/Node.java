@@ -7,8 +7,8 @@ public class Node {
 
     private ArrayList<Node> children;
 
-    public int x;
-    public int y;
+    private int x = 0;
+    private int y = 0;
 
     public int level;
     /*
@@ -50,7 +50,7 @@ public class Node {
     }
 
     public int[] setCoordinates() {
-        int[] coord = new int[];
+        int[] coord = new int[2];
         coord[0] = x;
         coord[1] = y;
         return coord;
