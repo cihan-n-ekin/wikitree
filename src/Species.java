@@ -7,8 +7,11 @@ public class Species extends Node {
 
 
     public Species(TaxonomyInfo taxonInf) {
-        super(taxonInf.JSONData.get("").getAsString());
-
+        super(taxonInf.species.get("scientificName").getAsString());
         taxon = taxonInf;
+    }
+
+    public void setTree() {
+
     }
 }
