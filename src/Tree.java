@@ -15,19 +15,34 @@ public class Tree extends Node {
         return levels.get(lev);
     }
 
-    public boolean find(Node node) {
-        ArrayList<Node> searchNodes = new ArrayList<>(1);
-        ArrayList<Node> newSearchNodes = new ArrayList<>(0);
-        searchNodes.set(1, this);
-
-
-
-        return false;
-    }
 
     public Node find(String id) {
-        // TODO: Write method w
-        return new Node("w");
+
+        for( Node kingdom : getChildren()) {
+            if(kingdom.id.equals(id)) return kingdom;
+            for( Node phylum : getChildren()) {
+                if(phylum.id.equals(id)) return phylum;
+                for( Node subphyl : getChildren()) {
+                    if(subphyl.id.equals(id)) return subphyl;
+                    for( Node c : getChildren()) {
+                        if(c.id.equals(id)) return c;
+                        for( Node d : getChildren()) {
+                            if(d.id.equals(id)) return d;
+                            for( Node e : getChildren()) {
+                                if(e.id.equals(id)) return e;
+                                for( Node g : getChildren()) {
+                                    if(g.id.equals(id)) return g;
+                                    for( Node s : getChildren()) {
+                                        if(s.id.equals(id)) return s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
     }
 
     public void addSpecies(Species newSpecies) {
