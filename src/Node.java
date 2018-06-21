@@ -1,4 +1,3 @@
-import javax.lang.model.type.NullType;
 import java.util.ArrayList;
 
 import static java.util.Objects.isNull;
@@ -7,8 +6,8 @@ public class Node {
 
     private ArrayList<Node> children;
 
-    private int x = 0;
-    private int y = 0;
+    public int x;
+    public int y;
 
     public int level;
     /*
@@ -49,10 +48,8 @@ public class Node {
         return children.toArray(new Node[0]);
     }
 
-    public int[] setCoordinates() {
-        int[] coord = new int[2];
-        coord[0] = x;
-        coord[1] = y;
-        return coord;
+    public void setCoordinates(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 }
