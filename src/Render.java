@@ -54,7 +54,6 @@ public class Render {
 
     public static void main(String[] args) {
         Tree tree = new Tree();
-
         JFrame frame = new JFrame();
 
         // Taxonomy elements are panels
@@ -69,12 +68,16 @@ public class Render {
         taxonomy[7] = "Genus";
         taxonomy[8] = "Species";
 
+        // Sizes
         int lenghtOfTaxonomy = taxonomy.length;
+        int widthOfBox = 137;
+        int heightOfWindow = 800;
+        int widthOfWindow = lenghtOfTaxonomy * widthOfBox
 
         for (int i = 0; i < lenghtOfTaxonomy; i++) {
             JPanel taxopanel = new JPanel();
 
-            taxopanel.setBounds(i * 137, 0, 137, 600);
+            taxopanel.setBounds(i * widthOfBox, 0, widthOfBox, 600);
             taxopanel.setBackground(Color.getHSBColor(i * 15, i * 15, 180));
 
             JLabel taxoLabel = new JLabel(taxonomy[i]);
@@ -93,7 +96,7 @@ public class Render {
 
         // Search GUI
         JPanel searchPanel = new JPanel();
-        searchPanel.setBounds(0, 600, lenghtOfTaxonomy * 137, 200);
+        searchPanel.setBounds(0, 600, widthOfWindow, 200);
 
         JButton searchButton = new JButton("Search");
         JTextField searchField = new JTextField("Name");
@@ -108,7 +111,7 @@ public class Render {
 
         frame.add(searchPanel);
 
-        frame.setSize(lenghtOfTaxonomy * 137, 800);
+        frame.setSize(widthOfWindow, heightOfWindow);
         frame.setLayout(null);
 
         frame.setVisible(true);
