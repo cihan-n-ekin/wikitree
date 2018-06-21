@@ -1,4 +1,3 @@
-import javax.lang.model.type.NullType;
 import java.util.ArrayList;
 
 import static java.util.Objects.isNull;
@@ -49,7 +48,8 @@ public class Node {
         return children.toArray(new Node[0]);
     }
 
-    public int setCoordinates() {
-        return x, y;
+    public void setCoordinates(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 }
