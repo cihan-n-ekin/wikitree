@@ -52,13 +52,15 @@ public class Tree extends Node {
         ArrayList<Node> kingdoms = getLevel(1);
         boolean newKingdomRequired = true;
         for (Node king:kingdoms) {
-            if (kingdom == king.id) {
+            if (kingdom.equals(king.id)) {
                 newKingdomRequired = false;
             }
 
         }
 
         int firstLevel = 1;
+
+        // TODO: SOME CODE!
 
         Node king = new Node("");
         Node phy = new Node("");
@@ -72,12 +74,10 @@ public class Tree extends Node {
 
         switch(firstLevel){
             case 1:
-                String kingname = newSpecies.taxon.kingdom.get("scientificName").getAsString();
-                king.id = kingname;
+                king.id = newSpecies.taxon.kingdom.get("scientificName").getAsString();
                 this.addChild(king);
             case 2:
-                String phyname = newSpecies.taxon.phylum.get("scientificName").getAsString();
-                phy.id = phyname;
+                phy.id = newSpecies.taxon.phylum.get("scientificName").getAsString();
 
                 if (firstLevel < 2){
                     king.addChild(phy);
@@ -87,8 +87,7 @@ public class Tree extends Node {
                 }
 
             case 3:
-                String subphyname = newSpecies.taxon.subphylum.get("scientificName").getAsString();
-                subphy.id = subphyname;
+                subphy.id = newSpecies.taxon.subphylum.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
                     phy.addChild(subphy);
@@ -98,8 +97,7 @@ public class Tree extends Node {
                 }
 
             case 4:
-                String ordname = newSpecies.taxon.order.get("scientificName").getAsString();
-                ord.id = ordname;
+                ord.id = newSpecies.taxon.order.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
                     subphy.addChild(ord);
@@ -109,8 +107,7 @@ public class Tree extends Node {
                 }
 
             case 5:
-                String subordname = newSpecies.taxon.suborder.get("scientificName").getAsString();
-                subord.id = subordname;
+                subord.id = newSpecies.taxon.suborder.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
                     ord.addChild(subord);
@@ -120,8 +117,7 @@ public class Tree extends Node {
                 }
 
             case 6:
-                String clasname = newSpecies.taxon.clss.get("scientificName").getAsString();
-                clas.id = clasname;
+                clas.id = newSpecies.taxon.clss.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
                     subord.addChild(clas);
@@ -131,8 +127,7 @@ public class Tree extends Node {
                 }
 
             case 7:
-                String famname = newSpecies.taxon.family.get("scientificName").getAsString();
-                fam.id = famname;
+                fam.id = newSpecies.taxon.family.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
                     clas.addChild(fam);
@@ -142,8 +137,7 @@ public class Tree extends Node {
                 }
 
             case 8:
-                String genusname = newSpecies.taxon.genus.get("scientificName").getAsString();
-                genus.id = genusname;
+                genus.id = newSpecies.taxon.genus.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
                     fam.addChild(genus);
@@ -153,8 +147,7 @@ public class Tree extends Node {
                 }
 
             case 9:
-                String specname = newSpecies.taxon.species.get("scientificName").getAsString();
-                spec.id = specname;
+                spec.id = newSpecies.taxon.species.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
                     genus.addChild(spec);
