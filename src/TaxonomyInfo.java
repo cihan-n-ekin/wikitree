@@ -71,8 +71,7 @@ public class TaxonomyInfo {
             url = new URL( "https://artsdatabanken.no/Api/Taxon/ScientificName?scientificname="
                     + taxNameOfSpecies.replaceAll("/ /", "%20"));
             jsonString = get_rest(url);
-            JSONData = new JsonParser().parse(jsonString).getAsJsonObject().getAsJsonArray().get(0).getAsJsonObject();
-
+            JSONData = new JsonParser().parse(jsonString).getAsJsonArray().get(0).getAsJsonObject();
 
             for( JsonElement classification : JSONData.get("higherClassification").getAsJsonArray() ) {
                 switch(classification.getAsJsonObject().get("taxonRank").getAsString()) {
@@ -106,7 +105,8 @@ public class TaxonomyInfo {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
+
     }
 }
