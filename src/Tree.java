@@ -4,7 +4,8 @@ public class Tree extends Node {
     private ArrayList<ArrayList<Node>> levels;
 
     Tree() {
-
+        super("tree");
+        levels = new ArrayList<>(6);
     }
 
     public ArrayList<Node> getLevel(int lev) {

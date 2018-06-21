@@ -1,4 +1,7 @@
+import javax.lang.model.type.NullType;
 import java.util.ArrayList;
+
+import static java.util.Objects.isNull;
 
 public class Node {
 
@@ -16,15 +19,29 @@ public class Node {
      */
     public String id;
 
-    Node() {
-
+    Node(String id) {
+        children = new ArrayList<>(0);
     }
 
-    public void addChild() {
+    public void addChild(Node newChild) {
+        // Assumes this is correctly formatted to be a child of this node!!
+
         // Add child to children ArrayList
+        if (isNull(getChild(newChild.id))) {
+            children.add(newChild);
+        }
     }
 
-    public ArrayList<Node> getChildren() {
-        return children;
+    public Node getChild(String id) {
+        for (Node child : children) {
+            if(id.equals(child.id)) {
+                return child;
+            }
+        }
+        return null;
+    }
+
+    public Node[] getChildren() {
+        return children.toArray(new Node[0]);
     }
 }
