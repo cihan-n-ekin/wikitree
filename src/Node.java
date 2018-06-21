@@ -10,7 +10,6 @@ public class Node {
     /*
     LEVELS:
         0: root (Tree instance)
-        1! Domain
         1: Kingdom
         2: Order
         3: Family
@@ -19,7 +18,7 @@ public class Node {
      */
     public String id;
 
-    Node(String id) {
+    public Node(String id) {
         children = new ArrayList<>(0);
     }
 

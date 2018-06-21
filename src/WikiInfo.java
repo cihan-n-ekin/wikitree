@@ -61,4 +61,15 @@ public class WikiInfo {
             }
         }
     }
+
+    public String getByTaxonLevel(int level) {
+         switch (level) {
+             case 1: return kingdom;
+             case 2: return order;
+             case 3: return family;
+             case 4: return genus;
+             case 5: return species;
+             default: return null;
+         }
+    }
 }

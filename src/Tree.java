@@ -22,5 +22,6 @@ public class Tree extends Node {
         return false;
     }
 
+    //TODO: add addSpecies() method
 
 }
