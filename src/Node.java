@@ -62,6 +62,39 @@ public class Node {
         return false;
     }
 
+    public boolean childrenHasChild (String id) {
+        boolean has = false;
+        if (getChildren().length == 0){
+            return false;
+        } else if ( this.hasChild(id)) {
+            return true;
+        } else {
+            for (Node child :
+                    children) {
+                has = has || child.childrenHasChild(id);
+            };
+        }
+        return has;
+    }
+    public boolean childrenHasChild (Node node) {
+        boolean has = false;
+        if (getChildren().length == 0) {
+            return false;
+        } else if ( this.hasChild(node)) {
+            return true;
+        } else {
+            for (Node child :
+                    children) {
+                has = has || child.childrenHasChild(node);
+            };
+        }
+        return has;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public Node[] getChildren() {
         return children.toArray(new Node[0]);
     }

@@ -14,7 +14,12 @@ public class Tree extends Node {
     }
 
     public boolean find(Node node) {
-        // TODO: Write method w
+        ArrayList<Node> searchNodes = new ArrayList<>(1);
+        ArrayList<Node> newSearchNodes = new ArrayList<>(0);
+        searchNodes.set(1, this);
+
+
+
         return false;
     }
 

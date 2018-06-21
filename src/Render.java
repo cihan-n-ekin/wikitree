@@ -74,16 +74,16 @@ public class Render {
         for (int i = 0; i < lenghtOfTaxonomy; i++) {
             JPanel taxopanel = new JPanel();
 
-            taxopanel.setBounds(i * 137, 0, 137, 700);
+            taxopanel.setBounds(i * 137, 0, 137, 600);
             taxopanel.setBackground(Color.getHSBColor(i * 15, i * 15, 180));
 
             JLabel taxoLabel = new JLabel(taxonomy[i]);
 
-            JPanel[] insidePanelArray = renderTaxonomy(tree,1);
+            // JPanel[] insidePanelArray = renderTaxonomy(tree,1);
 
-            for (JPanel insidePanel : insidePanelArray) {
+            /*for (JPanel insidePanel : insidePanelArray) {
                 taxopanel.add(insidePanel);
-            }
+            }*/
 
             taxopanel.add(taxoLabel);
             frame.add(taxopanel);
@@ -93,7 +93,7 @@ public class Render {
 
         // Search GUI
         JPanel searchPanel = new JPanel();
-        searchPanel.setBounds(0, 700, lenghtOfTaxonomy * 137, 100);
+        searchPanel.setBounds(0, 600, lenghtOfTaxonomy * 137, 200);
 
         JButton searchButton = new JButton("Search");
         JTextField searchField = new JTextField("Name");
