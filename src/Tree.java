@@ -1,5 +1,3 @@
-import com.google.gson.JsonElement;
-
 import java.util.ArrayList;
 
 public class Tree extends Node {
@@ -9,6 +7,11 @@ public class Tree extends Node {
         super("tree");
         levels = new ArrayList<>(6);
         this.level = 0;
+
+        for (int i = 0; i < 6; i++) {
+            levels.add(new ArrayList<Node>(0));
+        }
+
     }
 
     public ArrayList<Node> getLevel(int lev) {
