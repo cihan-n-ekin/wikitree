@@ -100,10 +100,12 @@ public class Render {
         searchField.setBounds(200, 50, 100, 20);
         searchButton.setBounds(450, 50, 100, 20);
 
+
         searchPanel.setBackground(Color.gray);
 
         searchPanel.add(searchButton);
         searchPanel.add(searchField);
+
 
         frame.add(searchPanel);
 

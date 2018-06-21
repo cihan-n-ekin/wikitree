@@ -83,56 +83,37 @@ public class Tree extends Node {
                 }
 
             case 3:
-                subphy.id = newSpecies.taxon.subphylum.get("scientificName").getAsString();
+                clas.id = newSpecies.taxon.clss.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
-                    phy.addChild(subphy);
+                    phy.addChild(clas);
                 } else {
                     Node newphy = find(newSpecies.taxon.phylum.get("scientificName").getAsString());
-                    newphy.addChild(subphy);
+                    newphy.addChild(clas);
                 }
 
             case 4:
                 ord.id = newSpecies.taxon.order.get("scientificName").getAsString();
 
-                if (firstLevel < 3){
-                    subphy.addChild(ord);
+                if (firstLevel < 4) {
+                    clas.addChild(ord);
                 } else {
-                    Node newsubphy = find(newSpecies.taxon.subphylum.get("scientificName").getAsString());
-                    newsubphy.addChild(ord);
+                    Node newclas = find(newSpecies.taxon.order.get("scientificName").getAsString());
+                    newclas.addChild(ord);
                 }
 
-            case 5:
-                subord.id = newSpecies.taxon.suborder.get("scientificName").getAsString();
 
-                if (firstLevel < 3){
-                    ord.addChild(subord);
+            case 5:
+                fam.id = newSpecies.taxon.family.get("scientificName").getAsString();
+
+                if (firstLevel < 5) {
+                    ord.addChild(fam);
                 } else {
                     Node neword = find(newSpecies.taxon.order.get("scientificName").getAsString());
-                    neword.addChild(subord);
+                    neword.addChild(fam);
                 }
 
             case 6:
-                clas.id = newSpecies.taxon.clss.get("scientificName").getAsString();
-
-                if (firstLevel < 3){
-                    subord.addChild(clas);
-                } else {
-                    Node newsubord = find(newSpecies.taxon.suborder.get("scientificName").getAsString());
-                    newsubord.addChild(clas);
-                }
-
-            case 7:
-                fam.id = newSpecies.taxon.family.get("scientificName").getAsString();
-
-                if (firstLevel < 3){
-                    clas.addChild(fam);
-                } else {
-                    Node newclas = find(newSpecies.taxon.clss.get("scientificName").getAsString());
-                    newclas.addChild(fam);
-                }
-
-            case 8:
                 genus.id = newSpecies.taxon.genus.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
@@ -142,7 +123,7 @@ public class Tree extends Node {
                     newfam.addChild(genus);
                 }
 
-            case 9:
+            case 7:
                 spec.id = newSpecies.taxon.species.get("scientificName").getAsString();
 
                 if (firstLevel < 3){
