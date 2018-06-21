@@ -49,7 +49,10 @@ public class Node {
         return children.toArray(new Node[0]);
     }
 
-    public int setCoordinates() {
-        return x, y;
+    public int[] setCoordinates() {
+        int[] coord = new int[];
+        coord[0] = x;
+        coord[1] = y;
+        return coord;
     }
 }
