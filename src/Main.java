@@ -14,7 +14,9 @@ public class Main {
             try {
 
                 TaxonomyInfo page = new TaxonomyInfo(inp);
-
+                try {System.out.print(page.phylum.get("scientificName").getAsString());} catch(NullPointerException e) {
+                    System.out.println("not found!");
+                }
                 // Do things to add to the tree
 
             } catch (IllegalArgumentException e) {
