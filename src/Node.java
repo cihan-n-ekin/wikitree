@@ -44,6 +44,24 @@ public class Node {
         return null;
     }
 
+    public boolean hasChild (Node node) {
+        for (Node child : children) {
+            if(node.id.equals(child.id)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean hasChild (String id) {
+        for (Node child : children) {
+            if(id.equals(child.id)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public Node[] getChildren() {
         return children.toArray(new Node[0]);
     }
