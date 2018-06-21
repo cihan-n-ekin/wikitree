@@ -28,11 +28,11 @@ public class Tree extends Node {
     public void addSpecies(Species newSpecies) {
 
         // Kingdom
-        JsonElement kingdom = newSpecies.taxon.kingdom.get("scientificName");
+        String kingdom = newSpecies.taxon.kingdom.get("scientificName").getAsString();
         ArrayList<Node> kingdoms = getLevel(1);
         boolean newKingdomRequired = true;
         for (Node king:kingdoms) {
-            if (kingdom.getAsString() == king.id) {
+            if (kingdom == king.id) {
                 newKingdomRequired = false;
             }
 
@@ -40,64 +40,109 @@ public class Tree extends Node {
 
         int firstLevel = 1;
 
-
+        Node king = new Node("");
+        Node phy = new Node("");
+        Node subphy = new Node("");
+        Node ord = new Node("");
+        Node subord = new Node("");
+        Node clas = new Node("");
+        Node fam = new Node("");
+        Node genus = new Node("");
+        Node spec = new Node("");
 
         switch(firstLevel){
             case 1:
                 String kingname = newSpecies.taxon.kingdom.get("scientificName").getAsString();
-                Node king = new Node(kingname);
+                king.id = kingname;
+                this.addChild(king);
             case 2:
                 String phyname = newSpecies.taxon.phylum.get("scientificName").getAsString();
-                Node phy = new Node(phyname);
+                phy.id = phyname;
+
+                if (firstLevel < 2){
+                    king.addChild(phy);
+                } else {
+                    Node newking = find(newSpecies.taxon.kingdom.get("scientificName").getAsString());
+                    newking.addChild(phy);
+                }
+
             case 3:
                 String subphyname = newSpecies.taxon.subphylum.get("scientificName").getAsString();
-                Node subphy = new Node(subphyname);
+                subphy.id = subphyname;
+
+                if (firstLevel < 3){
+                    phy.addChild(subphy);
+                } else {
+                    Node newphy = find(newSpecies.taxon.phylum.get("scientificName").getAsString());
+                    newphy.addChild(subphy);
+                }
+
             case 4:
                 String ordname = newSpecies.taxon.order.get("scientificName").getAsString();
-                Node ord = new Node(ordname);
+                ord.id = ordname;
+
+                if (firstLevel < 3){
+                    subphy.addChild(ord);
+                } else {
+                    Node newsubphy = find(newSpecies.taxon.subphylum.get("scientificName").getAsString());
+                    newsubphy.addChild(ord);
+                }
+
             case 5:
                 String subordname = newSpecies.taxon.suborder.get("scientificName").getAsString();
-                Node subord = new Node(subordname);
+                subord.id = subordname;
+
+                if (firstLevel < 3){
+                    ord.addChild(subord);
+                } else {
+                    Node neword = find(newSpecies.taxon.order.get("scientificName").getAsString());
+                    neword.addChild(subord);
+                }
+
             case 6:
                 String clasname = newSpecies.taxon.clss.get("scientificName").getAsString();
-                Node clas = new Node(clasname);
+                clas.id = clasname;
+
+                if (firstLevel < 3){
+                    subord.addChild(clas);
+                } else {
+                    Node newsubord = find(newSpecies.taxon.suborder.get("scientificName").getAsString());
+                    newsubord.addChild(clas);
+                }
+
             case 7:
+                String famname = newSpecies.taxon.family.get("scientificName").getAsString();
+                fam.id = famname;
+
+                if (firstLevel < 3){
+                    clas.addChild(fam);
+                } else {
+                    Node newclas = find(newSpecies.taxon.clss.get("scientificName").getAsString());
+                    newclas.addChild(fam);
+                }
+
+            case 8:
+                String genusname = newSpecies.taxon.genus.get("scientificName").getAsString();
+                genus.id = genusname;
+
+                if (firstLevel < 3){
+                    fam.addChild(genus);
+                } else {
+                    Node newfam = find(newSpecies.taxon.family.get("scientificName").getAsString());
+                    newfam.addChild(genus);
+                }
+
+            case 9:
+                String specname = newSpecies.taxon.species.get("scientificName").getAsString();
+                spec.id = specname;
+
+                if (firstLevel < 3){
+                    genus.addChild(spec);
+                } else {
+                    Node newgenus = find(newSpecies.taxon.genus.get("scientificName").getAsString());
+                    newgenus.addChild(spec);
+                }
 
         }
-
-
-
-                String specname = newSpecies.taxon.species.get("scientificName").getAsString();
-        String genusname = newSpecies.taxon.genus.get("scientificName").getAsString();
-        String famname = newSpecies.taxon.family.get("scientificName").getAsString();
-
-
-
-
-
-        Node spec = new Node(specname);
-        Node genus = new Node(genusname);
-        Node fam  = new Node(famname);
-
-
-
-
-
-
-
-        genus.addChild(spec);
-        fam.addChild(genus);
-        clas.addChild(fam);
-        subord.addChild(clas);
-        ord.addChild(subord);
-        subphy.addChild(ord);
-        phy.addChild(subphy);
-        king.addChild(phy);
-        this.addChild(king);
-
-
-
     }
-
-
 }
