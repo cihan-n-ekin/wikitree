@@ -1,6 +1,3 @@
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -16,11 +13,11 @@ public class Main {
             }
             try {
 
-                WikiInfo page = new WikiInfo(inp);
+                TaxonomyInfo page = new TaxonomyInfo(inp);
 
                 // Do things to add to the tree
 
-            } catch (IOException | IllegalArgumentException e) {
+            } catch (IllegalArgumentException e) {
                 e.printStackTrace();
             }
         }

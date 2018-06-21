@@ -17,11 +17,14 @@ public class Tree extends Node {
         return false;
     }
 
-    public boolean find(String id) {
+    public Node find(String id) {
         // TODO: Write method w
-        return false;
+        return new Node("w");
     }
 
-    //TODO: add addSpecies() method
+    public void addSpecies(Species newSpecies) {
+        //TODO: add addSpecies() method
+    }
+
 
 }
