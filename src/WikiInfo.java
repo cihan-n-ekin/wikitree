@@ -40,16 +40,22 @@ public class WikiInfo {
                     switch(cols.get(0).text()) {
                         case "Kingdom":
                             kingdom = cols.get(0).text();
+                            break;
                         case "Order:":
                             order = cols.get(0).text();
+                            break;
                         case "Family:":
                             family = cols.get(0).text();
+                            break;
                         case "Genus:":
                             genus = cols.get(0).text();
+                            break;
                         case "Species:":
                             species = cols.get(0).text();
+                            break;
                         case "Clade:":
                             clades.add(cols.get(0).text());
+                            break;
                     }
                 }
             }
