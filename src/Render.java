@@ -72,7 +72,7 @@ public class Render {
         int lenghtOfTaxonomy = taxonomy.length;
         int widthOfBox = 137;
         int heightOfWindow = 800;
-        int widthOfWindow = lenghtOfTaxonomy * widthOfBox
+        int widthOfWindow = lenghtOfTaxonomy * widthOfBox;
 
         for (int i = 0; i < lenghtOfTaxonomy; i++) {
             JPanel taxopanel = new JPanel();
