@@ -40,12 +40,17 @@ public class Render {
 
             String name = elem.id;
             JLabel label = new JLabel(name);
+            label.setBounds(68, height/2, 130, 60);
+            elem.x = (i * 137) + 68;
+            elem.y = ((weight * prevNumOfChildren) + height);
             elemPanel.add(label);
+
             panelArray[i] = elemPanel;
         }
 
         return panelArray;
     }
+
 
     public static void main(String[] args) {
         Tree tree = new Tree();
