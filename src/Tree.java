@@ -6,6 +6,7 @@ public class Tree extends Node {
     Tree() {
         super("tree");
         levels = new ArrayList<>(6);
+        this.level = 0;
     }
 
     public ArrayList<Node> getLevel(int lev) {
