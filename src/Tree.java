@@ -142,7 +142,6 @@ public class Tree extends Node {
                     Node newgenus = find(newSpecies.taxon.genus.get("scientificName").getAsString());
                     newgenus.addChild(spec);
                 }
-
         }
     }
 }

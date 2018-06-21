@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a06ebd92-2559-4ec2-a764-dca50cb6bc59" name="Default" comment="GUI Render added">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a06ebd92-2559-4ec2-a764-dca50cb6bc59" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wikitree/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Render.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wikitree/Render.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Species.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wikitree/WikiInfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +51,8 @@
       <file leaf-file-name="Tree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="135" column="34" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+            <state relative-caret-position="1542">
+              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#176#177#0" expanded="true" />
@@ -362,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529583585384</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add species method is done">
+      <created>1529585361982</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529585361982</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -371,15 +371,15 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.49499285" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49356222" weight="0.32969698" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50500715" side_tool="true" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50143063" side_tool="true" visible="true" weight="0.32969698" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928468" weight="0.32969698" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49713877" weight="0.32969698" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49570817" weight="0.32969698" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972875" visible="true" weight="0.26037195" />
@@ -405,7 +405,8 @@
     <MESSAGE value="New coordinates added to Node class" />
     <MESSAGE value="GUI Render added" />
     <MESSAGE value="Tree add species" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tree add species" />
+    <MESSAGE value="add species method is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="add species method is done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -544,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="135" column="34" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+        <state relative-caret-position="1542">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#176#177#0" expanded="true" />
