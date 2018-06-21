@@ -52,9 +52,7 @@ public class Render {
     }
 
 
-    public static void main(String[] args) {
-        Tree tree = new Tree();
-        JFrame frame = new JFrame();
+    public static void render_win(JFrame frame, Tree tree) {
 
         // Taxonomy elements are panels
         String[] taxonomy = new String[9];

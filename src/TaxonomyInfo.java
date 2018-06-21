@@ -62,7 +62,7 @@ public class TaxonomyInfo {
     }
 
 
-    TaxonomyInfo(String taxNameOfSpecies) {
+    public TaxonomyInfo(String taxNameOfSpecies) {
 
         String jsonString;
         URL url;
